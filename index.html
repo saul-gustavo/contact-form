@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+
+<body>
+
+  <main class="main">
+    <h1 class="title-main">Contact Us</h1>
+
+    <form class="form">
+
+      <div class="input-content">
+
+        <div class="input-name">
+          <label class="title">First Name <span>*</span></label>
+          <input type="text" class="fname input-all">
+          <p class="text-error">This field is required</p>
+        </div>
+
+        <div class="input-name">
+          <label class="title">Last Name <span>*</span></label>
+          <input type="text" id="lname" class="lname input-all">
+          <p class="text-error">This field is required</p>
+        </div>
+
+      </div>
+
+      <div class="content-email">
+        <label class="title">Email Address <span>*</span></label>
+        <input type="email" name="email" class="email input-all">
+        <p class="text-error">Please enter a valid email address</p>
+      </div>
+
+      <div class="content-check">
+
+        <label class="title">Query Type <span>*</span></label>
+
+        <div class="input-content">
+
+          <div class="input-check">
+            <input type="radio" class="check" id="general" name="query-type">
+            <label class="title" for="general">General Enquiry</label>
+          </div>
+
+          <div class="input-check">
+            <input type="radio" class="check" name="query-type" id="support">
+            <label class="title" for="support">Support Request</label>
+          </div>
+
+        </div>
+        <p class="text-error">Please select a query type</p>
+      </div>
+
+      <div class="message-content">
+        <label class="title">Message <span>*</span></label>
+        <textarea class="field-msj" rows="4"></textarea>
+        <p class="text-error">This field is required</p>
+      </div>
+
+      <div class="terms">
+        <input type="checkbox" class="check-terms" id="terminos">
+        <label class="title" for="terminos">I consent to being contacted by the team</label>
+        <p class="text-error">To submit this form, please consent to being contacted</p>
+      </div>
+
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
+  </main>
+
+  <div class="alert-message">
+    <p class="text-and-icon">
+      <img src="./assets/images/icon-success-check.svg" alt="icon success" class="enviado">
+      <span class="msj-alert">Message Sent!</span>
+    </p>
+    <p class="sub">Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
+
+
+<!-- <img src="./assets/images/icon-checkbox-check.svg" alt="">
+  <img src="./assets/images/icon-radio-selected.svg" alt=""> -->
+<!-- <main class="main">
+    <form class="form">
+      <h1 class="title">Contact Us</h1>
+
+      <div class="input-container flex-one">
+        <label>First Name <span>*</span></label>
+        <input type="text" name="fname" id="fname" class="fname">
+        <p class="text-error">This field is required</p>
+      </div>
+
+      <div class="input-container flex-two">
+        <label>Last Name</label>
+        <input type="text" name="lname" id="lname" class="lname">
+        <p class="text-error">This field is required</p>
+      </div>
+
+      <div class="input-contianer">
+        <label class="email-h">Email Address</label>
+        <input type="email" name="email" class="email">
+        <p class="text-error">Please enter a valid email address</p>
+      </div>
+
+      <div class="sub-input-container">
+        <label>Query Type <span>*</span></label>
+        <div class="input-container">
+          <input type="checkbox">
+          <label>General Enquiry</label>
+        </div>
+
+        <div class="input-container">
+          <input type="checkbox">
+          <label>Support Request</label>
+        </div>
+
+        <p class="text-error">Please select a query type</p>
+      </div>
+
+      <div class="mensaje-content">
+        <label>Message</label>
+        <textarea class="mensaje"></textarea>
+        <p>This field is required</p>
+      </div>
+
+      <div class="terms">
+        <input type="checkbox">
+        <label>I consent to being contacted by the team</label>
+        <p class="text-error">To submit this form, please consent to being contacted</p>
+      </div>
+    </form>
+
+    <button type="submit">Submit</button>
+  </main>
+
+  <div class="alert-message">
+    <p class="text-and-icon">
+      <img src="./assets/images/icon-success-check.svg" alt="icon success" class="enviado">
+      <span>Message Sent!</span>
+    </p>
+    <p class="sub">Thanks for completing the form. We'll be in touch soon!</p>
+  </div> -->
