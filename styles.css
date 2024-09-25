@@ -181,6 +181,22 @@ input[type="radio"]:checked {
     }
 }
 
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    color: var(--gray600);
+}
+
+.attribution a {
+    color: var(--gray600);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: var(--green600);
+}
+
 
 @media screen and (max-width: 768px) {
     .main {
