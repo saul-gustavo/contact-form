@@ -22,6 +22,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     font-size: 1rem; /* 16px */
     font-family: "Karla", sans-serif; /* 400 700*/
     position: relative;
@@ -33,6 +34,7 @@ body {
     max-width: 700px;
     width: 100%;
     border-radius: 20px;
+    margin: 1rem 0rem;
 }
 
 .form {
@@ -182,8 +184,7 @@ input[type="radio"]:checked {
 }
 
 .attribution {
-    position: absolute;
-    bottom: 10px;
+    padding: 15px;
     text-align: center;
     color: var(--gray600);
 }
